@@ -46,9 +46,11 @@ struct ContentListView: View {
 				Image(systemName: "window.awning.closed")
 				Text("Window")
 			}
-			Text("Volumn Tab")
-				.font(.largeTitle)
-				.foregroundColor(.orange)
+			NavigationSplitView {
+				Text("Volumn Tab")
+			} detail: {
+				VolumeView()
+			}
 				.tabItem {
 					Image(systemName: "cube")
 					Text("Volumn")
