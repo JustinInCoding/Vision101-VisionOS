@@ -9,10 +9,17 @@ import SwiftUI
 
 @main
 struct Vision101App: App {
-    var body: some Scene {
-        WindowGroup {
-//					VolumeView()
-					ContentListView()
-        }
-    }
+	
+	@State private var currentStyle: ImmersionStyle = .full
+	
+	var body: some Scene {
+		WindowGroup {
+			//					VolumeView()
+			ContentListView()
+		}.windowStyle(.plain)
+		
+		ImmersiveSpace(id: "ImmersiveScene") {
+			ImmersiveView()
+		}.immersionStyle(selection: $currentStyle, in: .full)
+	}
 }

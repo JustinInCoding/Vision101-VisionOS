@@ -15,6 +15,9 @@
 		981D33882BC2521800173315 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981D33872BC2521800173315 /* CourseView.swift */; };
 		981D338B2BC253B100173315 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981D338A2BC253B100173315 /* Course.swift */; };
 		981D338E2BC2691A00173315 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981D338D2BC2691900173315 /* VolumeView.swift */; };
+		981D33902BC2764000173315 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981D338F2BC2764000173315 /* ImmersiveView.swift */; };
+		981D33922BC2846200173315 /* SkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981D33912BC2846200173315 /* SkyView.swift */; };
+		981D33952BC286FB00173315 /* sunlight.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 981D33942BC286FB00173315 /* sunlight.skybox */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		981D33872BC2521800173315 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		981D338A2BC253B100173315 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		981D338D2BC2691900173315 /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
+		981D338F2BC2764000173315 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		981D33912BC2846200173315 /* SkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyView.swift; sourceTree = "<group>"; };
+		981D33942BC286FB00173315 /* sunlight.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = sunlight.skybox; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		981D33732BC2460B00173315 /* Vision101 */ = {
 			isa = PBXGroup;
 			children = (
+				981D33932BC286E100173315 /* Resources */,
 				981D338C2BC253CE00173315 /* Views */,
 				981D33892BC2539D00173315 /* Model */,
 				981D33782BC2460B00173315 /* Vision101App.swift */,
@@ -102,8 +109,18 @@
 				981D337A2BC2460B00173315 /* ContentListView.swift */,
 				981D33872BC2521800173315 /* CourseView.swift */,
 				981D338D2BC2691900173315 /* VolumeView.swift */,
+				981D338F2BC2764000173315 /* ImmersiveView.swift */,
+				981D33912BC2846200173315 /* SkyView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		981D33932BC286E100173315 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				981D33942BC286FB00173315 /* sunlight.skybox */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				981D33802BC2460C00173315 /* Preview Assets.xcassets in Resources */,
+				981D33952BC286FB00173315 /* sunlight.skybox in Resources */,
 				981D337D2BC2460C00173315 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981D33922BC2846200173315 /* SkyView.swift in Sources */,
 				981D338B2BC253B100173315 /* Course.swift in Sources */,
 				981D337B2BC2460B00173315 /* ContentListView.swift in Sources */,
+				981D33902BC2764000173315 /* ImmersiveView.swift in Sources */,
 				981D338E2BC2691A00173315 /* VolumeView.swift in Sources */,
 				981D33792BC2460B00173315 /* Vision101App.swift in Sources */,
 				981D33882BC2521800173315 /* CourseView.swift in Sources */,
